@@ -1,0 +1,108 @@
+Jwellery Managemnt System CSS Code
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #575757;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding: 8px 12px;
+  margin: 4px 0;
+  background-color: #f0f0f0;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+li:hover {
+  background-color: #d0d0d0;
+}
+
+/* Hide submenus by default */
+li ul {
+  display: none;
+  margin-left: 20px;
+}
+
+/* Show submenu on hover */
+li:hover > ul {
+  display: block;
+}
+
