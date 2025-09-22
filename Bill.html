@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ready-Made Gold Ornament Bill</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+      background-color: #f5f5f5;
+    }
+
+    .bill-box {
+      background: white;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .form-row > div {
+      flex: 1;
+    }
+    .btn {
+        background: goldenrod;
+        color: #fff;
+        padding: 10px 15px;
+        
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: darkgoldenrod;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="bill-box">
+    <h2>Ready-Made Gold Ornament Bill</h2>
+
+    <!-- Company Info -->
+    <div class="section">
+        <div class="form-row">
+        <div>
+          <label>Company Name</label>
+          <input type="text" placeholder="Enter company name">
+        </div>
+        <div>
+          <label>PAN Number</label>
+          <input type="text" placeholder="PAN Number">
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label>Phone/Mobile</label>
+          <input type="text" placeholder="Mobile Number">
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="Email Address">
+        </div>
+      </div>
+      <div>
+        <label>Today's Date</label>
+        <input type="date">
+      </div>
+    </div>
+
+    <!-- Customer Info -->
+    <div class="section">
+      <h3>Customer Detail</h3>
+      <div class="form-row">
+        <div>
+          <label>Customer Name</label>
+          <input type="text" placeholder="Full Name">
+        </div>
+        <div>
+          <label>Address</label>
+          <input type="text" placeholder="Address">
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="section">
+      <h3>Product Detail</h3>
+      <div class="form-row">
+        <div>
+          <label>Ornament Name</label>
+          <select>
+            <option>Select Ornament</option>
+            <option>Ring</option>
+            <option>Chain</option>
+            <option>Bangle</option>
+            <option>Earring</option>
+          </select>
+        </div>
+        <div>
+          <label>Type of Gold</label>
+          <select>
+            <option>Select Cr</option>
+            <option>24 Cr</option>
+            <option>22 Cr</option>
+            <option>18 Cr</option>
+            <option>14 Cr</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <button class="btn">Submit</button>
+  </div>
+
+</body>
+</html>

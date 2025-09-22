@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Order Bill</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        padding: 30px;
+      }
+
+      .bill-container {
+        background: white;
+        padding: 20px;
+        max-width: 700px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .company-details p {
+        margin: 5px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      .total {
+        text-align: right;
+        margin-top: 15px;
+      }
+
+      .note {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
+      }
+
+      .btn {
+        background: goldenrod;
+        color: #fff;
+        padding: 10px 15px;
+        
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: darkgoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bill-container">
+      <h2>Order Bill</h2>
+
+      <div class="company-details">
+        <p><strong>Company Name:</strong> Salai Destiny Pvt. Ltd</p>
+        <p><strong>Date:</strong> <input type="date" /></p>
+        <p>
+          <strong>Customer Name:</strong>
+          <input type="text" placeholder="Enter Customer Name" />
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>S.N</th>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Rate</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><input type="text" placeholder="Item Name" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" readonly /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="total">
+        <p><strong>Total:</strong> <input type="number" readonly /></p>
+      </div>
+
+      <p class="note">Note: Please check the bill before leaving.</p>
+      <button class="btn">Submit</button>
+    </div>
+  </body>
+</html>

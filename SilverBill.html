@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Silver Bill</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.note {
+  margin-top: 20px;
+  background: #ffffe0;
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+ .btn {
+        background: goldenrod;
+        color: #fff;
+        padding: 10px 15px;
+        
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: darkgoldenrod;
+      }
+
+</style>
+
+<body>
+  <div class="container">
+    <h2>Silver Bill</h2>
+
+    <div class="section">
+      <h3>Today's Date:</h3>
+      <input type="date">
+    </div>
+
+    <div class="section">
+      <h3>Company Detail</h3>
+      <input type="text" placeholder="Company Name">
+    </div>
+
+    <div class="section">
+      <h3>Customer Detail</h3>
+      <input type="text" placeholder="Customer Name">
+    </div>
+
+    <div class="section">
+      <h3>Product Detail</h3>
+      <label>Net Weight:</label><input type="text"><br>
+      <label>Gross Weight:</label><input type="text"><br>
+      <label>Received Silver:</label><input type="text"><br>
+      <label>Cost of Silver:</label><input type="text"><br>
+      <label>Making Charge:</label><input type="text"><br>
+      <label>Total Payable Amount:</label><input type="text">
+    </div>
+    <button class="btn">Pay</button>
+  </div>
+</body>
+</html>
+
+
+

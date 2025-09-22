@@ -2,12 +2,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    
 }
 
 /* Navbar styling */
+
 .navbar {
-    background-color: #333;
+    background-color:blue;
     overflow: hidden;
+    font-weight: bold;
 }
 
 .navbar a {
@@ -20,7 +23,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #575757;
+    background-color:gray;
 }
 
 /* Dropdown container */
@@ -38,7 +41,7 @@ body {
     padding: 14px 20px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    margin: 10px 20px;
     cursor: pointer;
 }
 
@@ -54,20 +57,23 @@ body {
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
+   
 }
 
 /* Dropdown links */
 .dropdown-content a {
     float: none;
+    background-color:white;
     color: black;
     padding: 12px 16px;
+    font-weight: bold;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color:rgb(190, 190, 247);
 }
 
 /* Show dropdown on hover */
@@ -75,3 +81,48 @@ body {
     display: block;
 }
 
+/* Sub master menu styling */
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+li {
+  position: relative;
+  padding: 8px 10px;
+
+  margin: 4px 8px;
+  background-color: white;
+  float: left;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight:bold;
+  
+}
+
+li:hover {
+  background-color: rgb(149, 159, 243);
+  text-decoration: underline;
+}
+
+/* Hide submenus by default */
+li ul {
+  display: none;
+  margin-left: 20px;
+}
+
+/* Show submenu on hover */
+li:hover > ul {
+  display: block;
+  position: relative;
+}
+li ul li {
+    background-color: lightgray;
+    border-radius: 0px;
+    margin: 20px;
+    font-weight: normal;
+    padding: 6px 10px;
+    width: fit-content;
+}

@@ -1,47 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jewellery Management System</title>
-
-    <!-- ✅ Linking the external CSS file correctly -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Jewellery Management System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<div class="navbar">
+  <nav class="navbar">
 
+    <!-- Master Files -->
     <div class="dropdown">
-        <button class="dropbtn">Master Files</button>
-        <div class="dropdown-content">
-            <a href="#">Bill</a>
-            <a href="#">Stock</a>
-            <a href="#">Income/Expenditure</a>
-            <a href="#">Customer</a>
-        </div>
+      <button class="dropbtn">Master Files</button>
+      <div class="dropdown-content">
+        <a href="Bill.html">Bill</a>
+        <a href="Stock.html">Stock</a>
+        <a href="IE.html">Income/Expenditure</a>
+        <a href="CustomerDetails.html">Customer</a>
+      </div>
     </div>
 
+    <!-- Sub Master Files -->
     <div class="dropdown">
-        <button class="dropbtn">Sub Master Files</button>
-        <div class="dropdown-content">
-            <a href="#">Bill</a>
-            <a href="#">Stock
-            <select>
-               <li>Raw Gold</li>
-               <li>Raw Silver</li>
-               <li>Stone</li>
-               <li>Other Assets</li>
-            </select></a>
-            </div>
-  </div>
-     </div>
-    </div>
+      <button class="dropbtn">Sub Master Files</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>
+            Bill
+            <ul class="submenu">
+              <li><a href="Orderbill.html">Order Bill</a> </li>
+              <li><a href="Bill.html">Ready Made Ornament Bill</a></li>
+            </ul>
+          </li>
 
-    
-</div>
+          <li>
+            Stock
+            <ul class="submenu">
+              <li>
+                Raw Gold
+                <ul class="sub-submenu">
+                  <li>24cr</li>
+                  <li>22cr</li>
+                  <li>18cr</li>
+                  <li>14cr</li>
+                </ul>
+              </li>
+              <li><a href="SilverBill.html"> Raw Silver</a></li>
+              <li>
+                Stone
+                <ul class="sub-submenu">
+                  <li>Numerious</li>
+                </ul>
+              </li>
+              <li>
+                Other Assets
+                <ul class="sub-submenu">
+                  <li>Furniture</li>
+                  <li>Safe</li>
+                  <li>Decorations</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Income/Expenditure
+            <ul class="submenu">
+              <li>
+                Income Heads
+                <ul class="sub-submenu">
+                  <li>By Sales</li>
+                  <li>By Making Charge</li>
+                  <li>Wages</li>
+                  <li>Others</li>
+                </ul>
+              </li>
+              <li>
+                Expenditure Heads
+                <ul class="sub-submenu">
+                  <li>Rent</li>
+                  <li>Salary</li>
+                  <li>Electricity</li>
+                  <li>Water</li>
+                  <li>Others</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Bill Management
+            <ul class="submenu">
+              <li>Company Name/PAN</li>
+              <li>Phone/Mobile</li>
+              <li>Address</li>
+              <li>
+                Type of Bill
+                <ul class="sub-submenu">
+                  <li> Bill</li>
+                  <li>New Purchase</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>Todays Rate</li>
+
+          <li>
+            Customer Details
+            <ul class="submenu">
+              <li>Name</li>
+              <li>Address</li>
+              <li>Mobile No.</li>
+              <li>PAN</li>
+            </ul>
+          </li>
+
+          <li>
+            Types of Product
+            <ul class="submenu">
+              <li>
+                Gold
+                <ul class="sub-submenu">
+                  <li>24cr</li>
+                  <li>22cr</li>
+                  <li>18cr</li>
+                  <li>14cr</li>
+                </ul>
+              </li>
+              <li>Silver</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 </body>
 </html>
-
-
